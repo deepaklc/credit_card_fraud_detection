@@ -51,7 +51,7 @@ if st.sidebar.checkbox('Show the initial data set'):
     st.write('Percentage of null values: ', percent_missing)
 
     # Check if there are any duplicate rows
-    st.write('Duplicate rows: ', df.duplicated(keep=False).sum())
+    st.write('Duplicate', df.duplicated(keep=False).sum())
 
     # Delete duplicate rows
     df = df.drop_duplicates() 
